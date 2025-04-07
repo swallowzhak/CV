@@ -1,0 +1,75 @@
+/* Main styles */
+.main {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: #2C3E50;
+}
+
+/* Sidebar */
+.sidebar .sidebar-content {
+    background-color: #2C3E50;
+    color: white;
+}
+
+/* Form elements */
+.stRadio > div {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* 自定义 tabs 样式 */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0;
+    display: flex;
+    width: 100%;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* tab 文字样式 */
+.stTabs [data-baseweb="tab"] p {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+/* 选中的 tab 样式 */
+.stTabs [data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="true"] {
+    background-color: #E8F5E9;
+    border-radius: 5px 5px 0 0;
+}
+
+/* 未选中的 tab 样式 */
+.stTabs [data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="false"] {
+    background-color: #f0f2f6;
+    border-radius: 5px 5px 0 0;
+}
+
+/* 确保文字居中 */
+.stTabs [data-baseweb="tab"] div[data-testid="stMarkdownContainer"] {
+    text-align: center;
+    width: 100%;
+}
