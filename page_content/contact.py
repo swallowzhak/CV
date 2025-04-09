@@ -1,43 +1,38 @@
 import streamlit as st
 
 def contact_page():
-    st.markdown("## Contact Me")
+    st.markdown("## 与我联系")
     
     st.markdown("""
-    Feel free to reach out to me through any of the following channels:
+    欢迎通过以下任何渠道与我联系：
     
     ### Direct Contact
-    - **Email**: [sarah.johnson@example.com](mailto:sarah.johnson@example.com)
-    - **Phone**: +1 (123) 456-7890
-    - **LinkedIn**: [linkedin.com/in/sarahjohnson](https://linkedin.com/in/sarahjohnson)
-    - **GitHub**: [github.com/sarahjohnson](https://github.com/sarahjohnson)
+    - **Email**: [yanzishan2020@163.com](mailto:yanzishan2020@163.com)
+    - **Phone**: +86 18834698169
+    - **LinkedIn**: [linkedin.com/in/yanzishan](https://linkedin.com/in/yanzishan)
     """)
     
-    st.markdown("### Send Me a Message")
+    st.markdown("### 给我发消息")
     
-    with st.form("contact_form"):
+    with st.form("联系表单"):
         col1, col2 = st.columns(2)
         
         with col1:
-            name = st.text_input("Name")
-            email = st.text_input("Email")
+            name = st.text_input("姓名")
+            email = st.text_input("邮箱")
             
         with col2:
-            subject = st.text_input("Subject")
+            subject = st.text_input("主题")
             
-        message = st.text_area("Message", height=150)
+        message = st.text_area("留言内容", height=150)
         
-        submitted = st.form_submit_button("Send Message")
+        submitted = st.form_submit_button("发送消息")
         
         if submitted:
-            st.success("Thanks for your message! I'll get back to you soon.")
+            st.success("感谢您的留言！我会尽快回复。")
             # In a real application, you would process the form data here
             # For example, send an email or store in a database
     
     st.markdown("---")
     
-    st.markdown("""
-    ### Office Hours
-    I'm generally available for virtual meetings Monday through Friday, 9 AM to 5 PM Eastern Time.
-    Please email me to schedule a call or video conference.
-    """)
+   

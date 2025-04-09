@@ -1,8 +1,8 @@
-# Personal Website with Streamlit
+# 个人网站 - Streamlit
 
-This is a personal website built using Streamlit, featuring multiple pages and interactive components.
+基于 Streamlit 构建的个人网站，包含多个页面和交互式组件。
 
-## Project Structure
+## 项目结构
 
 ```
 project/
@@ -61,4 +61,4 @@ To add a new interactive component:
 
 1. Create a new Python file in the `components` directory
 2. Define your component function
-3. Import and use the component in your page files 
+3. Import and use the component in your page files

@@ -2,100 +2,93 @@ import streamlit as st
 from components.interactive import display_interactive_chart
 
 def experience_page():
-    st.markdown("## Professional Experience")
+    st.markdown("## 实习经历")
     
     st.markdown("""
-    ### Data Science Intern
-    **TechCorp Inc.** | *June 2021 - August 2021*
+    ### 营销策划实习生
+    **小红书** | 营销中心 - 家生活&潮数码行业策划 | *2024年3月 - 2024年7月*
     
-    - Analyzed customer data to identify patterns and trends using Python and SQL
-    - Developed a machine learning model to predict customer churn with 85% accuracy
-    - Created interactive dashboards using Tableau to visualize key performance indicators
-    - Presented findings and recommendations to senior management
+    - 参与策划小红书家生活/数码行业IP通案，分析IP矩阵并优化内容，完成6个IP通案撰写，成功吸引12个品牌合作意向，实现招商1980万元
+    - 参与23场IP营销活动策划并落地15个项目，独立完成10个策划案获海尔、松下等品牌认可，落地5个项目，独立策划活动创收1680万元
+    - 统筹15个项目全链路落地，负责执行需求对接、H5设计、文案撰写等环节，与各方协同保障活动效果，实现平均曝光量1亿+及互动量30万+
     """)
     
     st.markdown("""
-    ### Research Assistant
-    **University of XYZ, Department of Computer Science** | *January 2021 - May 2021*
+    ### 社交媒体营销实习生
+    **猿辅导** | 斑马百科 - 市场部 | *2023年11月 - 2024年2月*
     
-    - Assisted professor with research on natural language processing techniques
-    - Implemented and evaluated various machine learning algorithms for text classification
-    - Co-authored a paper that was accepted at a regional computer science conference
-    - Mentored undergraduate students on research methodologies and programming
+    - 负责斑马百科APP在小红书、抖音的KOC投放，拓展母婴亲子类KOC资源500+，从0到1打通抖音KOC合作链路，季度合作230+博主（超额完成50%目标）
+    - 负责投放策略制定及优化全流程，小红书博主软文平均阅读量1.2w（CPV<0.05），抖音博主视频平均播放量12w（CPM<3），带货417单创收6万+
+    - 策划「我是百科小老师」UGC活动，激励用户发布孩子讲解知识视频，产生180+用户作品，负责活动物料设计、资源位安排及优秀作品二次传播
     """)
     
     st.markdown("""
-    ### Software Development Intern
-    **InnovateTech Solutions** | *May 2020 - August 2020*
+    ### 市场活动实习生
+    **中海物业** | 市场部 | *2021年9月 - 2021年12月*
     
-    - Developed and maintained web applications using Django and React
-    - Collaborated with a team of developers using Agile methodologies
-    - Implemented new features based on user feedback and requirements
-    - Participated in code reviews and testing procedures
+    - 深度参与举办"方舟生活节"系列品牌活动，结合售楼部实地花店场景策划艺术插花教学活动，负责物料制作对接、活动布场及宣传文案，一人同时对接30+合作方
+    - 负责官方公众号运营，构思私域宣传文案并通过话术引导客户阅读，文章平均阅读量1000+，有效提升活动影响力
+    - 参与双十二"幸福来敲门"直播活动全流程，负责脚本撰写、流程对接、物料制作及布场等工作，邀请专家诠释"幸福"理念并融入楼盘推荐，直播观看量4万+位居分公司第一
     """)
     
+    st.markdown("""
+    ### 电视台实习生
+    **晋城电视台** | 社会一部 | *2021年6月 - 2021年8月*
+    
+    - 参与年度晚会"双拥花开太行山"的筹备和录制，负责物料设计对接、颁奖词撰写、后期剪辑
+    - 作为小组导演和制片，独立构思并参与医保科普相关短视频剧本编写、录制、剪辑和出镜，视频在抖音平台平均播放量超过3000
+    - 独立负责全市党史知识竞赛的赛程设计，构想赛制与规则，确保赛事规则的公平性与赛事类节目看点
+    """)
     st.markdown("---")
     
-    st.markdown("## Projects")
+    st.markdown("## 项目经历")
     
     projects = [
         {
-            "title": "Customer Segmentation Analysis",
-            "description": "Used K-means clustering to segment customers based on purchasing behavior.",
-            "skills": ["Python", "scikit-learn", "Pandas", "Matplotlib"],
-            "outcome": "Identified 5 distinct customer segments that informed targeted marketing campaigns."
+            "title": "七月浮游艺术创意文化工作室",
+            "description": "负责工作室商业策划书撰写，获国创项目良好结题并受邀参与全国创新创业年会；策划【毕业季】采访和【心动】主题征集活动，吸引90+参与者，引流110+新粉丝；运营3个粉丝社群，制定SOP维持日活，实现裂变增长至460人。",
+            "skills": ["商业策划", "活动策划", "社群运营", "内容运营"],
+            "outcome": "获国创项目良好结题，成功运营460人社群"
         },
         {
-            "title": "Predictive Maintenance System",
-            "description": "Developed a model to predict equipment failures before they occur.",
-            "skills": ["Python", "TensorFlow", "Time Series Analysis", "IoT"],
-            "outcome": "Reduced downtime by 23% and maintenance costs by 15%."
-        },
-        {
-            "title": "Natural Language Processing for Customer Support",
-            "description": "Created a text classification system to automatically categorize customer support tickets.",
-            "skills": ["Python", "NLTK", "spaCy", "BERT"],
-            "outcome": "Improved response time by 35% and increased customer satisfaction scores."
+            "title": "爱华仕一帆风顺系列品牌传播策划",
+            "description": "为爱华仕\"一帆风顺\"系列行李箱策划营销活动，以『形影箱随，足迹纷飞』为主题构建整合品牌传播策略。策划行李收纳赛、涂鸦大师行李箱定制等创意营销活动，结合商旅、旅游季、毕业季场景撰写TVC脚本。",
+            "skills": ["品牌策划", "创意营销", "TVC脚本撰写", "整合传播"],
+            "outcome": "获得第13届全国大学生广告艺术大赛国家级优秀奖、广东省三等奖"
         }
     ]
     
     for i, project in enumerate(projects):
         with st.expander(f"{project['title']}", expanded=i==0):
-            st.markdown(f"**Description:** {project['description']}")
-            st.markdown(f"**Skills Used:** {', '.join(project['skills'])}")
-            st.markdown(f"**Outcome:** {project['outcome']}")
+            st.markdown(f"**项目描述：** {project['description']}")
+            st.markdown(f"**使用技能：** {', '.join(project['skills'])}")
+            st.markdown(f"**项目成果：** {project['outcome']}")
     
-    # Add the interactive visualization demo
-    with st.expander("Interactive Data Visualization Demo", expanded=False):
-        st.markdown("**Description:** An interactive demonstration of various data visualization techniques.")
-        display_interactive_chart()
+
     
     st.markdown("---")
     
-    st.markdown("## Professional Skills")
+    st.markdown("## 技能")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
-        ### Technical Skills
-        - **Programming Languages:** Python, R, SQL, JavaScript
-        - **Machine Learning:** scikit-learn, TensorFlow, PyTorch
-        - **Data Processing:** Pandas, NumPy, PySpark
-        - **Visualization:** Matplotlib, Seaborn, Tableau, PowerBI
-        - **Cloud Platforms:** AWS, Azure, Google Cloud
-        - **Web Development:** Django, Flask, React
+        ### 专业技能
+        - **编程语言:** Python, R, SQL
+        - **办公软件:** Microsoft Office
+        - **设计工具:** Canva, Adobe Premiere Pro, Adobe Photoshop
+        - **专业技能:** 营销策划, 文案撰写, 摄影
         """)
         
     with col2:
         st.markdown("""
-        ### Soft Skills
-        - **Communication:** Excellent written and verbal communication
-        - **Teamwork:** Collaborative team player with experience in Agile environments
-        - **Problem-solving:** Strong analytical and critical thinking abilities
-        - **Time Management:** Efficient at prioritizing tasks and meeting deadlines
-        - **Leadership:** Experience leading small teams and mentoring junior colleagues
-        - **Adaptability:** Quick learner who thrives in dynamic environments
+        ### 软实力
+        - **沟通能力:** 优秀的书面和口头表达能力
+        - **团队协作:** 具有丰富的团队协作经验
+        - **解决问题:** 强大的分析和批判性思维能力
+        - **时间管理:** 高效的任务优先级排序和按期交付能力
+        - **适应能力:** 快速学习并在动态环境中快速成长
         """)
     
-    st.markdown("---") 
+    st.markdown("---")

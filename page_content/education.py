@@ -8,60 +8,53 @@ def education_page():
     **香港中文大学 | *2024.8 - 2025.7*
     
     - GPA: 3.7/4.0
-    - 主要课程: Advanced Machine Learning, Deep Learning, Natural Language Processing, Data Visualization, Statistical Methods for Data Science, Big Data Analytics
+    - 主要课程: 市场营销中的机器学习、社交媒体分析、市场营销分析、客户分析、数字营销、组织营销（B2B）、商业谈判、战略营销
     
     ### 广告学（品牌传播）文学学士
     **华南理工大学 | *2019.9 - 2023.6*
 
     - GPA: 3.8/4.0
-    - 主要课程: Algorithms and Data Structures, Database Systems, Computer Networks, Operating Systems, Software Engineering, Web Development
+    - 主要课程: 品牌战略管理、网络营销学、整合品牌传播、市场营销学、广告学原理、传播学概论、消费者行为学、公共关系学
     """)
     
     st.markdown("---")
     
     st.markdown("## 获奖经历")
     
-    cert1, cert2, cert3 = st.columns(3)
+    cert1, cert2, cert3, cert4 = st.columns(4)
     
     with cert1:
         st.markdown("""
-        ### 全国大学生广告艺术大赛 - 国家级优秀奖, 广东省二等奖
-        **2021年**
-        **Amazon Web Services** | *March 2022*
-        
-        Demonstrated expertise in designing, building, securing, and maintaining analytics solutions on AWS.
+        ### 华南理工大学毕业实习优秀实习生
+        **2023年**
         """)
         
     with cert2:
         st.markdown("""
-        ### TensorFlow Developer Certificate
-        **Google** | *January 2022*
-        
-        Validated ability to develop deep learning models using TensorFlow.
+        ### 国家级创业训练项目"良好"结项
+        **2022年**
         """)
         
     with cert3:
         st.markdown("""
-        ### Microsoft Certified: Azure Data Scientist Associate
-        **Microsoft** | *November 2021*
-        
-        Demonstrated expertise in using Azure services to train, evaluate, and deploy machine learning models.
+        ### 大学生广告艺术大赛全国优秀奖、广东省三等奖
+        **2021年**
         """)
-    
+        
+    with cert4:
+        st.markdown("""
+        ### 华南理工大学校三等奖学金、三好学生
+        **2021年**
+        """)
     st.markdown("---")
     
     st.markdown("## 学术研究")
     
     st.markdown("""
-    ### Sentiment Analysis of Product Reviews
-    - Developed a deep learning model to analyze customer reviews and predict sentiment
-    - Achieved 92% accuracy using BERT and fine-tuning techniques
-    - Implemented the model as a web application using Flask
-    
-    ### Image Classification for Medical Diagnosis
-    - Created a convolutional neural network to classify medical images
-    - Worked with a dataset of X-ray images to detect pneumonia
-    - Achieved 88% accuracy and deployed the model on a cloud platform
+    ### 虚拟数字人营销效果研究
+    - 对虚拟数字人、形式逼真度和行为逼真度进行文献综述，厘清发展历程和研究现状
+    - 通过实验研究虚拟数字人的形式真实性超过行为真实性程度对顾客购买倾向的影响
+    - 运用SPSS进行数据分析，验证中介变量，为虚拟数字人的营销应用提出建议
     """)
     
     st.markdown("---") 
